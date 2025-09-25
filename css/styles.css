@@ -3,6 +3,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
+div.bg-img-fak {
+    height: 1000px;
+    width: 100%;
+    background-image: url(../images/56440343_4173207_7f0fb0a4f1fc0fb5187603c37b120d94_wm.jpg);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0.7;
+}
+
+div.bg-img-home {
+    height: 1000px;
+    width: 100%;
+    background-image: url(../images/56440343_4173207_7f0fb0a4f1fc0fb5187603c37b120d94_wm.jpg);
+    background-repeat: no-repeat;
+}
+
 #navbar {
     display: flex;
     align-items: center;
@@ -33,4 +49,8 @@ body {
 
 #logo {
     height: 100px;
+}
+
+footer {
+    background-color: lightgray;
 }
