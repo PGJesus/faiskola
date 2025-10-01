@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beállítások</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="images/FAK_Logo.jpg" alt="Logo" id="logo">
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fak.html">Fák</a></li>
+            <li><a href="rolunk.html">Rólunk</a></li>
+        </ul>
+        <div class="dropdown" id="navbar-dropdown">
+            <button class="dropbtn" id="dropdownBtn">☰</button>
+            <div class="dropdown-content" id="dropdownContent">
+                    <a href="settings.html" id="settings-link">Beállítások</a>
+                    <a href="account.html" id="account-link">Fiók</a>
+                <div class="theme-toggle">
+                    <span>Téma:</span>
+                    <button id="themeSwitcher">Sötét</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-img-home">
+        <div class="overlay" style="max-width: 400px;">
+            <h1 class="main-title">Beállítások</h1>
+            <form class="settings-form" id="settingsForm">
+                <div class="settings-group">
+                    <label for="lang">Nyelv:</label>
+                    <select id="lang">
+                        <option value="hu">Magyar</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div class="settings-group">
+                    <label for="notif">Értesítések:</label>
+                    <input type="checkbox" id="notif"> Engedélyezve
+                </div>
+                <div class="settings-group">
+                    <label for="privacy">Adatvédelem:</label>
+                    <select id="privacy">
+                        <option value="default">Alapértelmezett</option>
+                        <option value="high">Magas</option>
+                        <option value="low">Alacsony</option>
+                    </select>
+                </div>
+                <button type="submit" class="settings-save-btn">Mentés</button>
+                <span id="settingsSavedMsg" style="display:none;color:#2e7d32;font-size:1rem;margin-top:8px;">Beállítások elmentve!</span>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2025 FAK</span>
+            <span> | Kapcsolat: info@fak.hu | Telefon: +36 30 123 4567</span>
+        </div>
+    </footer>
+    <script src="js/theme.js"></script>
+</body>
+</html>

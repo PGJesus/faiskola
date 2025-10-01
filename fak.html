@@ -14,8 +14,51 @@
             <li><a href="fak.html">Fák</a></li>
             <li><a href="rolunk.html">Rólunk</a></li>
         </ul>
+        <div class="dropdown" id="navbar-dropdown">
+            <button class="dropbtn" id="dropdownBtn">☰</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="settings.html" id="settings-link">Beállítások</a>
+                <a href="account.html" id="account-link">Fiók</a>
+                <div class="theme-toggle">
+                    <span>Téma:</span>
+                    <button id="themeSwitcher">Sötét</button>
+                </div>
+            </div>
+        </div>
     </nav>
-    <div class="bg-img-fak"><p>cigányok</p></div>
-    
+    <div class="bg-img-fak">
+        <div class="overlay">
+            <h1 class="main-title">Fafajták</h1>
+            <div class="tree-grid">
+                <div class="tree-card">
+                    <img src="images/tolgy.jpg" alt="Tölgy" class="tree-img">
+                    <h2>Tölgy</h2>
+                    <p>A tölgy erős, hosszú életű fa, amelyet gyakran használnak bútorok és épületek készítéséhez.</p>
+                </div>
+                <div class="tree-card">
+                    <img src="images/fenyo.jpg" alt="Fenyő" class="tree-img">
+                    <h2>Fenyő</h2>
+                    <p>A fenyő gyorsan növő, örökzöld fa, amelyet főként papír és bútor alapanyagként használnak.</p>
+                </div>
+                <div class="tree-card">
+                    <img src="images/nyir.jpg" alt="Nyír" class="tree-img">
+                    <h2>Nyír</h2>
+                    <p>A nyírfa világos kérgéről ismert, és gyakran használják rétegelt lemez készítéséhez.</p>
+                </div>
+                <div class="tree-card">
+                    <img src="images/hars.jpg" alt="Hárs" class="tree-img">
+                    <h2>Hárs</h2>
+                    <p>A hársfa puha, könnyen megmunkálható, és gyakran használják faragáshoz, hangszerekhez.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2025 FAK</span>
+            <span> | Kapcsolat: info@fak.hu | Telefon: +36 30 123 4567</span>
+        </div>
+    </footer>
+    <script src="js/theme.js"></script>
 </body>
 </html>

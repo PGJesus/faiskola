@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAK</title>
+    <title>Fiók</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
         <div class="dropdown" id="navbar-dropdown">
             <button class="dropbtn" id="dropdownBtn">☰</button>
             <div class="dropdown-content" id="dropdownContent">
-                <a href="settings.html" id="settings-link">Beállítások</a>
-                <a href="account.html" id="account-link">Fiók</a>
+                   <a href="settings.html" id="settings-link">Beállítások</a>
+                   <a href="account.html" id="account-link">Fiók</a>
                 <div class="theme-toggle">
                     <span>Téma:</span>
                     <button id="themeSwitcher">Sötét</button>
@@ -27,9 +27,26 @@
         </div>
     </nav>
     <div class="bg-img-home">
-        <div class="overlay">
-            <h1 class="main-title">FAK</h1>
-            <p class="intro">Üdvözlünk a FAK oldalon! Itt négy különböző fafajt ismerhetsz meg, és többet tudhatsz meg rólunk is. Fedezd fel a természet szépségeit és tanulj a fákról!</p>
+        <div class="overlay" style="max-width: 400px;">
+            <h1 class="main-title">Fiók</h1>
+            <div class="account-section">
+                <h2>Bejelentkezés</h2>
+                <form>
+                    <input type="text" placeholder="Felhasználónév vagy Email" required><br>
+                    <input type="password" placeholder="Jelszó" required><br>
+                    <button type="submit" disabled>Bejelentkezés</button>
+                </form>
+            </div>
+            <hr style="margin: 24px 0; opacity: 0.3;">
+            <div class="account-section">
+                <h2>Regisztráció</h2>
+                <form>
+                    <input type="text" placeholder="Felhasználónév" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="password" placeholder="Jelszó" required><br>
+                    <button type="submit" disabled>Regisztráció</button>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
@@ -39,7 +56,5 @@
         </div>
     </footer>
     <script src="js/theme.js"></script>
-</body>
-</html>
 </body>
 </html>
