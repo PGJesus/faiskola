@@ -1,4 +1,3 @@
-// Settings page logic
 if (document.getElementById('settingsForm')) {
     const lang = document.getElementById('lang');
     const notif = document.getElementById('notif');
@@ -6,7 +5,6 @@ if (document.getElementById('settingsForm')) {
     const form = document.getElementById('settingsForm');
     const savedMsg = document.getElementById('settingsSavedMsg');
 
-    // Load settings from localStorage
     const settings = JSON.parse(localStorage.getItem('fak_settings') || '{}');
     if (settings.lang) lang.value = settings.lang;
     if (settings.notif !== undefined) notif.checked = settings.notif;

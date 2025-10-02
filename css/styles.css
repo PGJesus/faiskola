@@ -91,6 +91,9 @@
 .dropdown-content a:hover {
     background: #333;
 }
+.dropdown-content .theme-toggle span {
+    color: #fff;
+}
 .theme-toggle {
     display: flex;
     align-items: center;
